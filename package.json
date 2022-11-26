@@ -1,0 +1,53 @@
+{
+  "name": "ruran-ui",
+  "version": "0.1.3",
+  "description": "个人组件库（ch）",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "ruran-ui",
+    "vue",
+    "ui"
+  ],
+  "author": "ruran",
+  "files": [
+    "dist",
+    "components",
+    "example"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./webpack.component.js",
+    "build:css": "npx gulp sass",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:build": "cd docs && npm run build",
+    "docs:serve": "cd docs && npm run serve"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "core-js": "^3.8.3",
+    "g": "^2.0.1",
+    "npx": "^10.2.2",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "vue-loader": "^15.10.1",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.7",
+    "webpack-cli": "^5.0.0"
+  }
+}
